@@ -81,7 +81,7 @@
 
         <!-- >>> ORM -->
         <version.org.hibernate>5.3.6.Final</version.org.hibernate>
-        <version.org.hibernate.commons.annotations>5.0.4.Final</version.org.hibernate.commons.annotations>
+        <version.org.hibernate.commons.annotations>5.1.0.Final</version.org.hibernate.commons.annotations>
         <version.javax.persistence>2.2</version.javax.persistence>
         <!--
             Using JAXB 2.3.0 as 2.2.11 seems to be broken in more than a few ways.
@@ -740,7 +740,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <configuration >
+                <configuration>
                     <skipIfEmpty>true</skipIfEmpty>
                 </configuration>
                 <executions>
@@ -876,7 +876,7 @@
                             </configuration>
                             <!-- Different executions from 2.x: the "start" goal has been renamed in version 5  -->
                             <executions>
-                                <execution >
+                                <execution>
                                     <id>start-elasticsearch</id>
                                     <phase>pre-integration-test</phase>
                                     <goals>
@@ -921,7 +921,7 @@
                             </configuration>
                             <!-- Different executions from 2.x: the "start" goal has been renamed in version 5  -->
                             <executions>
-                                <execution >
+                                <execution>
                                     <id>start-elasticsearch</id>
                                     <phase>pre-integration-test</phase>
                                     <goals>
