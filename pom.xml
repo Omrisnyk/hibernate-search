@@ -263,7 +263,7 @@
             overridden by a CI job of the Checkstyle project so that they can
             check for regressions. Which is obviously good for us, too.
          -->
-        <puppycrawl.checkstyle.version>8.8</puppycrawl.checkstyle.version>
+        <puppycrawl.checkstyle.version>8.29</puppycrawl.checkstyle.version>
 
         <!-- Asciidoctor -->
 
@@ -344,11 +344,11 @@
             This is mainly useful when running tests in Arquillian, where illegal-access=deny won't work
             and is not useful, so we disable it.
          -->
-        <surefire.jvm.args.java-version.strict></surefire.jvm.args.java-version.strict>
-        <surefire.jvm.args.java-version.lenient></surefire.jvm.args.java-version.lenient>
+        <surefire.jvm.args.java-version.strict/>
+        <surefire.jvm.args.java-version.lenient/>
         <surefire.jvm.args.java-version>${surefire.jvm.args.java-version.strict}</surefire.jvm.args.java-version>
-        <surefire.jvm.args.jacoco></surefire.jvm.args.jacoco>
-        <failsafe.jvm.args.jacoco></failsafe.jvm.args.jacoco>
+        <surefire.jvm.args.jacoco/>
+        <failsafe.jvm.args.jacoco/>
         <!--
              Pass these properties as system properties to be able to switch to
              a different database without re-compiling the hibernate.properties file
@@ -378,8 +378,8 @@
          -->
         <surefire.environment>default</surefire.environment>
 
-        <arquillian.wildfly.jvm.args.java-version></arquillian.wildfly.jvm.args.java-version>
-        <arquillian.wildfly.jvm.args.jacoco></arquillian.wildfly.jvm.args.jacoco>
+        <arquillian.wildfly.jvm.args.java-version/>
+        <arquillian.wildfly.jvm.args.jacoco/>
         <!--
           The arguments below are JBoss modules settings taken from
           https://github.com/jboss-modules/jboss-modules/blob/5b4744e74f35cbab23536e3e52c0724fdbbedcb7/src/main/java/org/jboss/modules/maven/MavenSettings.java#L264
@@ -392,8 +392,8 @@
         </arquillian.wildfly.jvm.args.jbossmodules>
         <arquillian.wildfly.jvm.args>${arquillian.wildfly.jvm.args.java-version} ${arquillian.wildfly.jvm.args.jacoco} ${arquillian.wildfly.jvm.args.jbossmodules}</arquillian.wildfly.jvm.args>
 
-        <pax-exam.jvm.args.java-version></pax-exam.jvm.args.java-version>
-        <pax-exam.jvm.args.jacoco></pax-exam.jvm.args.jacoco>
+        <pax-exam.jvm.args.java-version/>
+        <pax-exam.jvm.args.jacoco/>
         <pax-exam.jvm.args>${pax-exam.jvm.args.java-version} ${pax-exam.jvm.args.jacoco}</pax-exam.jvm.args>
 
         <!--
@@ -405,8 +405,8 @@
         <!-- Elasticsearch tests properties -->
 
         <test.elasticsearch.host.url>http://localhost:9200</test.elasticsearch.host.url>
-        <test.elasticsearch.host.username></test.elasticsearch.host.username>
-        <test.elasticsearch.host.password></test.elasticsearch.host.password>
+        <test.elasticsearch.host.username/>
+        <test.elasticsearch.host.password/>
 
         <!-- Eclipse plugin options -->
 
@@ -1004,7 +1004,7 @@
                                 <requireMavenVersion>
                                     <version>${maven.min.version}</version>
                                 </requireMavenVersion>
-                                <banDuplicatePomDependencyVersions />
+                                <banDuplicatePomDependencyVersions/>
                             </rules>
                         </configuration>
                     </execution>
@@ -1016,7 +1016,7 @@
                         <configuration>
                             <skip>${enforcer.dependencyconvergence.skip}</skip>
                             <rules>
-                                <DependencyConvergence />
+                                <DependencyConvergence/>
                             </rules>
                         </configuration>
                     </execution>
@@ -1836,7 +1836,7 @@
                                                 </goals>
                                             </pluginExecutionFilter>
                                             <action>
-                                                <ignore />
+                                                <ignore/>
                                             </action>
                                         </pluginExecution>
                                         <pluginExecution>
@@ -1849,7 +1849,7 @@
                                                 </goals>
                                             </pluginExecutionFilter>
                                             <action>
-                                                <ignore />
+                                                <ignore/>
                                             </action>
                                         </pluginExecution>
                                         <pluginExecution>
@@ -1862,7 +1862,7 @@
                                                 </goals>
                                             </pluginExecutionFilter>
                                             <action>
-                                                <ignore />
+                                                <ignore/>
                                             </action>
                                         </pluginExecution>
                                         <pluginExecution>
@@ -1875,7 +1875,7 @@
                                                 </goals>
                                             </pluginExecutionFilter>
                                             <action>
-                                                <ignore />
+                                                <ignore/>
                                             </action>
                                         </pluginExecution>
                                         <pluginExecution>
@@ -1889,7 +1889,7 @@
                                                 </goals>
                                             </pluginExecutionFilter>
                                             <action>
-                                                <ignore />
+                                                <ignore/>
                                             </action>
                                         </pluginExecution>
                                         <pluginExecution>
@@ -1902,7 +1902,7 @@
                                                 </goals>
                                             </pluginExecutionFilter>
                                             <action>
-                                                <ignore />
+                                                <ignore/>
                                             </action>
                                         </pluginExecution>
                                         <pluginExecution>
@@ -1915,7 +1915,7 @@
                                                 </goals>
                                             </pluginExecutionFilter>
                                             <action>
-                                                <ignore></ignore>
+                                                <ignore/>
                                             </action>
                                         </pluginExecution>
                                         <pluginExecution>
@@ -1936,7 +1936,7 @@
                                                 </goals>
                                             </pluginExecutionFilter>
                                             <action>
-                                                <ignore></ignore>
+                                                <ignore/>
                                             </action>
                                         </pluginExecution>
                                     </pluginExecutions>
@@ -2174,7 +2174,7 @@
                             </configuration>
                             <!-- Different executions from 2.x: the "start" goal has been renamed in version 5  -->
                             <executions>
-                                <execution >
+                                <execution>
                                     <id>start-elasticsearch</id>
                                     <phase>pre-integration-test</phase>
                                     <goals>
@@ -2225,7 +2225,7 @@
                             </configuration>
                             <!-- Different executions from 2.x: the "start" goal has been renamed in version 5  -->
                             <executions>
-                                <execution >
+                                <execution>
                                     <id>start-elasticsearch</id>
                                     <phase>pre-integration-test</phase>
                                     <goals>
@@ -2267,7 +2267,7 @@
                 <jdbc.url>jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1</jdbc.url>
                 <jdbc.user>sa</jdbc.user>
                 <jdbc.pass>sa</jdbc.pass>
-                <jdbc.isolation />
+                <jdbc.isolation/>
             </properties>
         </profile>
 
@@ -2292,7 +2292,7 @@
                 <jdbc.url>jdbc:mysql://vmg02.mw.lab.eng.bos.redhat.com/searctru</jdbc.url>
                 <jdbc.user>searctru</jdbc.user>
                 <jdbc.pass>searctru</jdbc.pass>
-                <jdbc.isolation />
+                <jdbc.isolation/>
             </properties>
         </profile>
 
@@ -2308,7 +2308,7 @@
                 <jdbc.url>jdbc:postgresql://notinstalled.lab.eng.bos.redhat.com:5432:searctru</jdbc.url>
                 <jdbc.user>searctru</jdbc.user>
                 <jdbc.pass>searctru</jdbc.pass>
-                <jdbc.isolation />
+                <jdbc.isolation/>
             </properties>
         </profile>
 
@@ -2324,7 +2324,7 @@
                 <jdbc.url>jdbc:postgresql://localhost:5432/testingdb</jdbc.url>
                 <jdbc.user>hibernate_user</jdbc.user>
                 <jdbc.pass>hibernate_password</jdbc.pass>
-                <jdbc.isolation />
+                <jdbc.isolation/>
             </properties>
         </profile>
 
@@ -2340,7 +2340,7 @@
                 <jdbc.url>jdbc:mariadb://localhost/testingdb</jdbc.url>
                 <jdbc.user>hibernate_user</jdbc.user>
                 <jdbc.pass>hibernate_password</jdbc.pass>
-                <jdbc.isolation />
+                <jdbc.isolation/>
             </properties>
         </profile>
 
@@ -2370,7 +2370,7 @@
                 <jdbc.url>jdbc:db2://vmg06.mw.lab.eng.bos.redhat.com:50000/jbossqa</jdbc.url>
                 <jdbc.user>searctru</jdbc.user>
                 <jdbc.pass>searctru</jdbc.pass>
-                <jdbc.isolation />
+                <jdbc.isolation/>
             </properties>
         </profile>
 
@@ -2387,7 +2387,7 @@
                 <jdbc.url>jdbc:oracle:thin:@dev04.qa.atl2.redhat.com:1521:qaora11</jdbc.url>
                 <jdbc.user>searctru</jdbc.user>
                 <jdbc.pass>searctru</jdbc.pass>
-                <jdbc.isolation />
+                <jdbc.isolation/>
             </properties>
         </profile>
 
@@ -2403,7 +2403,7 @@
                 <jdbc.url>jdbc:oracle:thin:@dev04.qa.atl2.redhat.com:1521:qaora11</jdbc.url>
                 <jdbc.user>searctru</jdbc.user>
                 <jdbc.pass>searctru</jdbc.pass>
-                <jdbc.isolation />
+                <jdbc.isolation/>
             </properties>
         </profile>
 
@@ -2422,7 +2422,7 @@
                 </jdbc.url>
                 <jdbc.user>searctru</jdbc.user>
                 <jdbc.pass>searctru</jdbc.pass>
-                <jdbc.isolation />
+                <jdbc.isolation/>
             </properties>
         </profile>
         <profile>
@@ -2439,7 +2439,7 @@
                 </jdbc.url>
                 <jdbc.user>searctru</jdbc.user>
                 <jdbc.pass>searctru</jdbc.pass>
-                <jdbc.isolation />
+                <jdbc.isolation/>
             </properties>
         </profile>
 
@@ -2456,7 +2456,7 @@
                 <jdbc.url>jdbc:sybase:Tds:vmg07.mw.lab.eng.bos.redhat.com:5000/searctru</jdbc.url>
                 <jdbc.user>searctru</jdbc.user>
                 <jdbc.pass>searctru</jdbc.pass>
-                <jdbc.isolation />
+                <jdbc.isolation/>
             </properties>
         </profile>
         <profile>
@@ -2471,7 +2471,7 @@
                 <jdbc.url>jdbc:jtds:sybase://vmg07.mw.lab.eng.bos.redhat.com:5000/searctru</jdbc.url>
                 <jdbc.user>searctru</jdbc.user>
                 <jdbc.pass>searctru</jdbc.pass>
-                <jdbc.isolation />
+                <jdbc.isolation/>
             </properties>
         </profile>
 
