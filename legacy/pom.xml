@@ -104,7 +104,7 @@
         <version.org.apache.httpcomponents.httpclient>4.5.2</version.org.apache.httpcomponents.httpclient>
         <version.org.apache.httpcomponents.httpcore>4.4.4</version.org.apache.httpcomponents.httpcore>
         <version.org.apache.commons.codec>1.10</version.org.apache.commons.codec>
-        <version.org.apache.commons.io>2.1</version.org.apache.commons.io>
+        <version.org.apache.commons.io>2.7</version.org.apache.commons.io>
 
         <!-- >>> Java EE/Jakarta EE dependencies -->
         <!-- Used in the JSR352 integration in particular, but also in the ORM integration (?) and various tests -->
