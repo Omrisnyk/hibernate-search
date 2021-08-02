@@ -97,7 +97,7 @@
 
         <!-- >>> Apache dependencies -->
         <!-- Some of these are necessary for Avro, some for the Elasticsearch backend, some for additional Lucene analyzers -->
-        <version.org.apache.commons.compress>1.5</version.org.apache.commons.compress>
+        <version.org.apache.commons.compress>1.21</version.org.apache.commons.compress>
         <version.org.apache.commons.lang>2.6</version.org.apache.commons.lang>
         <version.org.apache.commons.lang3>3.5</version.org.apache.commons.lang3>
         <version.org.apache.commons.logging>1.1.3</version.org.apache.commons.logging>
