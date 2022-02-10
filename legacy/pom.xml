@@ -80,7 +80,7 @@
         <version.feature-pack.uk.co.lucasweb.aws-v4-signer-java>1.3.0.hibernate03</version.feature-pack.uk.co.lucasweb.aws-v4-signer-java>
 
         <!-- >>> ORM -->
-        <version.org.hibernate>5.3.6.Final</version.org.hibernate>
+        <version.org.hibernate>5.4.24.Final</version.org.hibernate>
         <version.org.hibernate.commons.annotations>5.0.4.Final</version.org.hibernate.commons.annotations>
         <version.javax.persistence>2.2</version.javax.persistence>
         <!--
