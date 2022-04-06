@@ -93,7 +93,7 @@
         <!-- >>> JSR 352 -->
         <version.javax.batch>1.0</version.javax.batch>
         <!-- in line with the version used in WildFly 13 -->
-        <version.org.jberet>1.2.4.Final</version.org.jberet>
+        <version.org.jberet>2.0.3.Final</version.org.jberet>
 
         <!-- >>> Apache dependencies -->
         <!-- Some of these are necessary for Avro, some for the Elasticsearch backend, some for additional Lucene analyzers -->
@@ -740,7 +740,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <configuration >
+                <configuration>
                     <skipIfEmpty>true</skipIfEmpty>
                 </configuration>
                 <executions>
@@ -876,7 +876,7 @@
                             </configuration>
                             <!-- Different executions from 2.x: the "start" goal has been renamed in version 5  -->
                             <executions>
-                                <execution >
+                                <execution>
                                     <id>start-elasticsearch</id>
                                     <phase>pre-integration-test</phase>
                                     <goals>
@@ -921,7 +921,7 @@
                             </configuration>
                             <!-- Different executions from 2.x: the "start" goal has been renamed in version 5  -->
                             <executions>
-                                <execution >
+                                <execution>
                                     <id>start-elasticsearch</id>
                                     <phase>pre-integration-test</phase>
                                     <goals>
