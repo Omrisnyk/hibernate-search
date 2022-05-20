@@ -180,7 +180,7 @@
         <!-- When updating the following versions you will likely need to update the
              matching test profile as well, e.g. elasticsearch-5.2 for the 5.2+ series -->
         <version.org.elasticsearch.client>6.5.0</version.org.elasticsearch.client>
-        <version.com.google.code.gson>2.8.5</version.com.google.code.gson>
+        <version.com.google.code.gson>2.8.9</version.com.google.code.gson>
 
         <!-- >>> ORM -->
         <version.org.hibernate>5.4.0.Final</version.org.hibernate>
